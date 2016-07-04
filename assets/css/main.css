@@ -454,6 +454,7 @@ pre {
   min-width: 300px;
   display: flex;
   flex-flow: column;
+  background-color: rgba(229, 109, 26, 0.5);
   /*	background-color: transparentize(blue, 0.3);*/
   /*-----------------   Nav blcks   -------------*/ }
   .wrap .bg-duela {
@@ -836,7 +837,7 @@ pre {
         width: 300px;
         margin: 0 auto;
         padding: 10px 20px;
-        border-bottom: 1px solid black; }
+        border-bottom: 1px solid #555; }
         .eventos-wrap .lista-eventos .evento .info-evento .title-e {
           color: green;
           font-size: 21px;
@@ -877,34 +878,49 @@ pre {
     font-size: 3em; }
 
 .familia-wrap {
-  background-color: white;
-  max-width: 900px;
+  max-width: 960px;
   min-width: 280px;
   margin: 40px auto;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+  /*box-shadow: $wrap-shadow;*/
+  /*background-color: #f6f6f6;*/
+  /*background-color: #d6d6d6;*/
   padding: 10px 20px; }
-  .familia-wrap .articles-container {
+  .familia-wrap .sub-title-md {
+    color: #4c4c4c;
+    font-weight: 320;
+    font-size: 24px; }
+  .familia-wrap .text-normal {
+    color: #555;
+    font-weight: 200;
+    font-size: 16px;
+    max-width: 420px;
+    margin: 0 auto; }
+  .familia-wrap .persons-container {
     display: flex;
-    margin: 0;
+    margin: 40px 0 0 0;
     padding: 0;
-    background-color: pink;
     list-style: none;
     height: auto;
     width: 100%;
     flex-wrap: nowrap;
     flex-direction: column;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
-    border-radius: 3px;
-    overflow: hidden; }
-    .familia-wrap .articles-container .article {
+    /*box-shadow: $wrap-shadow;*/
+    overflow: hidden;
+    /*background-color: red;*/ }
+    .familia-wrap .persons-container .person {
       display: block;
-      margin: 0;
+      margin: 20px 0 0 0;
       padding: 0;
-      height: 150px;
-      background-color: rgba(0, 0, 255, 0.4); }
-      .familia-wrap .articles-container .article .picture-name-wrap {
+      height: auto;
+      /*background-color: transparentize(black,0.5);*/
+      /*box-shadow: $wrap-shadow;*/
+      box-sizing: border-box;
+      border: 5px solid #046256;
+      border-radius: 3px;
+      overflow: hidden; }
+      .familia-wrap .persons-container .person .picture-name-wrap {
         position: relative;
         display: flex;
         margin: 0;
@@ -912,26 +928,32 @@ pre {
         width: 100%;
         height: auto;
         flex-direction: row; }
-        .familia-wrap .articles-container .article .picture-name-wrap .small-img {
-          width: 220px;
-          height: 150px;
+        .familia-wrap .persons-container .person .picture-name-wrap .small-img {
+          width: 30vw;
+          max-width: 220px;
+          height: 100%;
+          /*max-height: 150px;*/
           margin: 0;
           padding: 0; }
-        .familia-wrap .articles-container .article .picture-name-wrap .name-wrap {
+        .familia-wrap .persons-container .person .picture-name-wrap .name-wrap {
           flex: 1 1 auto;
           display: flex;
           justify-content: center;
-          align-items: center; }
-          .familia-wrap .articles-container .article .picture-name-wrap .name-wrap .apodo {
+          align-items: center;
+          position: relative;
+          background-color: #058f7d; }
+          .familia-wrap .persons-container .person .picture-name-wrap .name-wrap .apodo {
             color: #fff;
             font-family: "Oswald", serif;
+            letter-spacing: 1.5px;
             margin: 0;
             line-height: 1;
-            font-size: 25px;
+            font-size: 27px;
+            font-weight: 300;
             text-transform: uppercase;
-            text-shadow: none; }
-      .familia-wrap .articles-container .article .more-info {
-        background-color: red;
+            text-shadow: 0px 3px 4px #555; }
+      .familia-wrap .persons-container .person .more-info {
+        background-color: #39af98;
         width: 100%;
         height: auto;
         display: none;
@@ -939,22 +961,26 @@ pre {
         margin: 0;
         overflow: hidden;
         /*				background-color: transparentize(red,0.8);*/ }
-        .familia-wrap .articles-container .article .more-info .big-img {
+        .familia-wrap .persons-container .person .more-info .big-img {
           width: 300px;
           float: left;
           margin: 0;
           padding: 0; }
-    .familia-wrap .articles-container .current {
+    .familia-wrap .persons-container .current {
       height: auto; }
 
 .contacto-wrap {
   background-color: white;
-  max-width: 900px;
+  max-width: 960px;
   min-width: 280px;
   margin: 40px auto;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
-  padding: 10px; }
+  /*box-shadow: $wrap-shadow */
+  padding: 10px;
+  background-color: #f6f6f6; }
   .contacto-wrap h2 {
-    background-color: #fff; }
+    background-color: #fff;
+    color: #4c4c4c;
+    font-weight: 300;
+    font-family: Roboto; }

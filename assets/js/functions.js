@@ -1,26 +1,26 @@
 // $(document).ready(function() {
 
-// 	$('.article').click(function() {
-// 	    $('.article').removeClass('current');
+// 	$('.person').click(function() {
+// 	    $('.person').removeClass('current');
 // 	    $(this).addClass('current');
 // 	    $(this).children('.more-info').show();
 // 	});
 // }
 
 var main = function() {
-  	$('.article').click(function() {
-    // $('.article').toggleClass('current');
+  	$('.person').click(function() {
+    // $('.person').toggleClass('current');
     // $('.more-info').hide();
     $(this).toggleClass('current');
     if($(this).hasClass('current') == true){
-    	$('.article').removeClass('current');
-    	$('.article').children('.more-info').hide();
+    	$('.person').removeClass('current');
+    	$('.person').children('.more-info').hide();
     	$(this).addClass('current');
     	$(this).children('.more-info').show();
 
     }
     else{
-    	$('.article').removeClass('current');
+    	$('.person').removeClass('current');
     	$(this).children('.more-info').hide();
     }
 
