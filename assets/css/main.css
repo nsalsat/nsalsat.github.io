@@ -878,15 +878,14 @@ pre {
     font-size: 3em; }
 
 .familia-wrap {
-  max-width: 960px;
+  width: 100%;
   min-width: 280px;
   margin: 40px auto;
   text-align: center;
-  border-radius: 3px;
   /*box-shadow: $wrap-shadow;*/
   /*background-color: #f6f6f6;*/
   /*background-color: #d6d6d6;*/
-  padding: 10px 20px; }
+  padding: 10px 0px; }
   .familia-wrap .sub-title-md {
     color: #4c4c4c;
     font-weight: 320;
@@ -899,8 +898,8 @@ pre {
     margin: 0 auto; }
   .familia-wrap .persons-container {
     display: flex;
-    margin: 40px 0 0 0;
-    padding: 0;
+    margin: 40px 0 40px 0;
+    padding: 30px 0;
     list-style: none;
     height: auto;
     width: 100%;
@@ -908,7 +907,9 @@ pre {
     flex-direction: column;
     /*box-shadow: $wrap-shadow;*/
     overflow: hidden;
-    /*background-color: red;*/ }
+    /*background-color: #1c9f92;*/
+    background-color: #05a793;
+    /*background-color: #f3f3f3;*/ }
     .familia-wrap .persons-container .person {
       display: block;
       margin: 20px 0 0 0;
@@ -917,7 +918,7 @@ pre {
       /*background-color: transparentize(black,0.5);*/
       /*box-shadow: $wrap-shadow;*/
       box-sizing: border-box;
-      border: 5px solid #046256;
+      border: 5px solid transparent;
       border-radius: 3px;
       overflow: hidden; }
       .familia-wrap .persons-container .person .picture-name-wrap {
@@ -927,33 +928,55 @@ pre {
         padding: 0;
         width: 100%;
         height: auto;
-        flex-direction: row; }
-        .familia-wrap .persons-container .person .picture-name-wrap .small-img {
+        flex-direction: row;
+        justify-content: center;
+        /*				.small-img {
+        					width: 30vw;
+        					max-width: 220px;
+        					height: 100%;
+        					max-height: 150px;
+        					margin: 0;
+        					padding: 0;
+        				}*/ }
+        .familia-wrap .persons-container .person .picture-name-wrap .small-img-wrap {
           width: 30vw;
           max-width: 220px;
-          height: 100%;
-          /*max-height: 150px;*/
+          height: 30vw;
+          max-height: 220px;
           margin: 0;
-          padding: 0; }
+          padding: 0;
+          background-color: red;
+          background-position: center center;
+          background-size: cover;
+          border-radius: 50%;
+          /*background-image: url(fam-images/{{person.small-img}});*/ }
+        .familia-wrap .persons-container .person .picture-name-wrap .line {
+          width: 3px;
+          height: 50px;
+          background-color: #fdc140;
+          height: 27vw;
+          max-height: 180px;
+          margin: auto 20px; }
         .familia-wrap .persons-container .person .picture-name-wrap .name-wrap {
-          flex: 1 1 auto;
-          display: flex;
+          /*flex: 1 1 auto;*/
+          display: inline-block;
+          width: 30vw;
           justify-content: center;
           align-items: center;
           position: relative;
-          background-color: #058f7d; }
+          /*background-color: rgb(5, 143, 125);*/ }
           .familia-wrap .persons-container .person .picture-name-wrap .name-wrap .apodo {
-            color: #fff;
+            color: #165547;
             font-family: "Oswald", serif;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.2px;
             margin: 0;
             line-height: 1;
             font-size: 27px;
-            font-weight: 300;
+            font-weight: 400;
             text-transform: uppercase;
             text-shadow: 0px 3px 4px #555; }
       .familia-wrap .persons-container .person .more-info {
-        background-color: #39af98;
+        /*background-color: #39af98;*/
         width: 100%;
         height: auto;
         display: none;
