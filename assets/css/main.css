@@ -615,7 +615,7 @@ pre {
   background-color: rgba(0, 0, 0, 0.3); }
 
 /*-----------------   Responsive   -------------*/
-@media screen and (max-width: 683px) {
+@media screen and (max-width: 768px) {
   .wrap {
     height: auto;
     min-height: 100vh;
@@ -899,7 +899,7 @@ pre {
   .familia-wrap .persons-container {
     display: flex;
     margin: 40px 0 40px 0;
-    padding: 30px 0;
+    padding: 0 0 20px 0;
     list-style: none;
     height: auto;
     width: 100%;
@@ -908,14 +908,13 @@ pre {
     /*box-shadow: $wrap-shadow;*/
     overflow: hidden;
     /*background-color: #1c9f92;*/
-    background-color: #05a793;
-    /*background-color: #f3f3f3;*/ }
+    /*background-color: #05a793;*/
+    background-color: #f3f3f3; }
     .familia-wrap .persons-container .person {
       display: block;
       margin: 20px 0 0 0;
       padding: 0;
       height: auto;
-      /*background-color: transparentize(black,0.5);*/
       /*box-shadow: $wrap-shadow;*/
       box-sizing: border-box;
       border: 5px solid transparent;
@@ -930,68 +929,100 @@ pre {
         height: auto;
         flex-direction: row;
         justify-content: center;
-        /*				.small-img {
-        					width: 30vw;
-        					max-width: 220px;
-        					height: 100%;
-        					max-height: 150px;
-        					margin: 0;
-        					padding: 0;
-        				}*/ }
+        align-items: center; }
         .familia-wrap .persons-container .person .picture-name-wrap .small-img-wrap {
-          width: 30vw;
-          max-width: 220px;
-          height: 30vw;
-          max-height: 220px;
+          width: 25vw;
+          max-width: 300px;
+          height: 25vw;
+          max-height: 300px;
           margin: 0;
           padding: 0;
-          background-color: red;
           background-position: center center;
           background-size: cover;
-          border-radius: 50%;
-          /*background-image: url(fam-images/{{person.small-img}});*/ }
+          border-radius: 50%; }
         .familia-wrap .persons-container .person .picture-name-wrap .line {
           width: 3px;
           height: 50px;
           background-color: #fdc140;
-          height: 27vw;
-          max-height: 180px;
-          margin: auto 20px; }
+          height: 18vw;
+          max-height: 220px;
+          margin: auto 3%; }
         .familia-wrap .persons-container .person .picture-name-wrap .name-wrap {
-          /*flex: 1 1 auto;*/
-          display: inline-block;
-          width: 30vw;
+          display: flex;
+          width: 25vw;
+          max-width: 300px;
           justify-content: center;
-          align-items: center;
+          align-items: baseline;
           position: relative;
-          /*background-color: rgb(5, 143, 125);*/ }
+          flex-direction: column; }
           .familia-wrap .persons-container .person .picture-name-wrap .name-wrap .apodo {
-            color: #165547;
-            font-family: "Oswald", serif;
+            font-family: "Oswald", sans-serif;
             letter-spacing: 1.2px;
+            color: #387c6d;
             margin: 0;
-            line-height: 1;
-            font-size: 27px;
+            line-height: 1.5;
+            font-size: 38px;
             font-weight: 400;
             text-transform: uppercase;
-            text-shadow: 0px 3px 4px #555; }
+            text-shadow: 0px 1px 3px rgba(85, 85, 85, 0.8); }
+          .familia-wrap .persons-container .person .picture-name-wrap .name-wrap .summary {
+            display: block;
+            color: #555;
+            font-size: 18px;
+            font-family: Roboto;
+            font-weight: 200;
+            margin: 0;
+            padding: 0; }
+          .familia-wrap .persons-container .person .picture-name-wrap .name-wrap .clik-more {
+            font-size: 10px;
+            color: rgba(85, 85, 85, 0.6);
+            margin: 0;
+            padding: 0;
+            line-height: 0.5; }
       .familia-wrap .persons-container .person .more-info {
-        /*background-color: #39af98;*/
         width: 100%;
         height: auto;
         display: none;
         padding: 10px;
         margin: 0;
         overflow: hidden;
-        /*				background-color: transparentize(red,0.8);*/ }
+        background-color: #f2f2f2; }
         .familia-wrap .persons-container .person .more-info .big-img {
           width: 300px;
           float: left;
           margin: 0;
           padding: 0; }
+      .familia-wrap .persons-container .person .small-line {
+        width: 30px;
+        height: 3px;
+        background-color: rgba(255, 255, 255, 0.6);
+        margin: 0px auto;
+        display: none; }
     .familia-wrap .persons-container .current {
       height: auto; }
 
+@media screen and (max-width: 683px) {
+  .familia-wrap .sub-title-md {
+    font-weight: 320;
+    font-size: 24px; }
+  .familia-wrap .text-normal {
+    font-weight: 200;
+    font-size: 16px;
+    max-width: 420px; }
+  .familia-wrap .persons-container .person .picture-name-wrap .line {
+    width: 3px;
+    height: 50px;
+    height: 20vw;
+    max-height: 150px;
+    margin: auto 15px; }
+  .familia-wrap .persons-container .person .picture-name-wrap .name-wrap {
+    width: 45vw; }
+    .familia-wrap .persons-container .person .picture-name-wrap .name-wrap .apodo {
+      font-weight: 400;
+      font-size: 22px; }
+    .familia-wrap .persons-container .person .picture-name-wrap .name-wrap .summary {
+      font-weight: 200;
+      font-size: 14px; } }
 .contacto-wrap {
   background-color: white;
   max-width: 960px;
