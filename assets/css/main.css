@@ -969,7 +969,6 @@ pre {
             display: block;
             color: #555;
             font-size: 18px;
-            font-family: Roboto;
             font-weight: 200;
             margin: 0;
             padding: 0; }
@@ -1016,7 +1015,7 @@ pre {
     max-height: 150px;
     margin: auto 15px; }
   .familia-wrap .persons-container .person .picture-name-wrap .name-wrap {
-    width: 45vw; }
+    width: 40vw; }
     .familia-wrap .persons-container .person .picture-name-wrap .name-wrap .apodo {
       font-weight: 400;
       font-size: 22px; }
