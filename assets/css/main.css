@@ -505,27 +505,27 @@ pre {
       text-align: center;
       position: relative;
       overflow: hidden; }
-      .wrap .nav [class^="sec-"] h3 {
+      .wrap .nav [class^="sec-"] .menu-name-text {
         position: absolute;
         text-decoration: none;
         color: #fff;
         text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
         font-family: 'Oswald', sans-serif;
         font-weight: lighter;
-        font-size: 25px;
+        font-size: 30px;
+        line-height: 1;
         text-transform: uppercase;
-        line-height: 25px;
         padding: 20px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         transition: all .3s ease-in-out;
         z-index: 13; }
-        .wrap .nav [class^="sec-"] h3 a:link {
+        .wrap .nav [class^="sec-"] .menu-name-text a:link {
           color: #fff; }
-        .wrap .nav [class^="sec-"] h3 a:visited {
+        .wrap .nav [class^="sec-"] .menu-name-text a:visited {
           color: #fff; }
-        .wrap .nav [class^="sec-"] h3 span {
+        .wrap .nav [class^="sec-"] .menu-name-text span {
           font-size: 12px;
           line-height: 12px; }
       .wrap .nav [class^="sec-"] img {
