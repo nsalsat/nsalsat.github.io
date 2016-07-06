@@ -13,7 +13,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 300 16px/1.5 "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
+  font: 300 16px/1.5 "Helvetica Neue", Roboto, sans-serif, Helvetica, Arial;
   color: #555;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -957,7 +957,7 @@ pre {
           position: relative;
           flex-direction: column; }
           .familia-wrap .persons-container .person .picture-name-wrap .name-wrap .apodo {
-            font-family: "Oswald", serif;
+            font-family: 'Oswald', sans-serif, Helvetica, Arial;
             letter-spacing: 1.2px;
             color: #387c6d;
             margin: 0;
@@ -989,7 +989,6 @@ pre {
         overflow: hidden;
         background-color: #fdc140; }
         .familia-wrap .persons-container .person .more-info-wrap .more-info {
-          /*background-color: #fff;*/
           background-color: #f3f3f3;
           max-width: 450px;
           margin: 0px auto;
