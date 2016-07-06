@@ -1,3 +1,5 @@
+/*16px*/
+/*400*/
 /**
  * Reset some basic elements
  */
@@ -11,8 +13,8 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #111;
+  font: 300 16px/1.5 "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
+  color: #555;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -56,7 +58,7 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 300; }
 
 /**
  * Links
@@ -160,7 +162,7 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: #555;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
@@ -886,13 +888,13 @@ pre {
   /*background-color: #d6d6d6;*/
   padding: 10px 0px; }
   .familia-wrap .sub-title-md {
-    color: #4c4c4c;
-    font-weight: 320;
-    font-size: 24px; }
+    /*color: #4c4c4c;*/
+    font-weight: 300;
+    font-size: 27px; }
   .familia-wrap .text-normal {
     color: #555;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 18px;
     max-width: 420px;
     margin: 0 auto; }
   .familia-wrap .persons-container {
@@ -955,10 +957,11 @@ pre {
           position: relative;
           flex-direction: column; }
           .familia-wrap .persons-container .person .picture-name-wrap .name-wrap .apodo {
-            font-family: "Oswald", sans-serif;
+            font-family: "Oswald", serif;
             letter-spacing: 1.2px;
             color: #387c6d;
             margin: 0;
+            padding: 0;
             line-height: 1.5;
             font-size: 38px;
             font-weight: 400;
@@ -974,23 +977,55 @@ pre {
           .familia-wrap .persons-container .person .picture-name-wrap .name-wrap .clik-more {
             font-size: 10px;
             color: rgba(85, 85, 85, 0.6);
-            margin: 0;
+            margin: -3px 0 0;
             padding: 0;
-            line-height: 0.5; }
-      .familia-wrap .persons-container .person .more-info {
+            line-height: 10px; }
+      .familia-wrap .persons-container .person .more-info-wrap {
         width: 100%;
         height: auto;
         display: none;
-        padding: 10px;
-        margin: 0;
+        padding: 0px;
+        margin: 30px 0 0 0;
         overflow: hidden;
-        /*background: linear-gradient(180deg,transparent, #333 40%);*/
         background-color: #fdc140; }
-        .familia-wrap .persons-container .person .more-info .big-img {
-          width: 300px;
-          float: left;
-          margin: 0;
-          padding: 0; }
+        .familia-wrap .persons-container .person .more-info-wrap .more-info {
+          /*background-color: #fff;*/
+          background-color: #f3f3f3;
+          max-width: 450px;
+          margin: 0px auto;
+          padding: 40px 20px;
+          border-left: 5px solid #fdc140;
+          border-right: 5px solid #fdc140; }
+          .familia-wrap .persons-container .person .more-info-wrap .more-info .person-name {
+            font-weight: 300;
+            font-size: 27px;
+            margin: 0; }
+          .familia-wrap .persons-container .person .more-info-wrap .more-info .person-line {
+            width: 30px;
+            height: 2px;
+            margin: 20px auto;
+            background-color: #387c6d; }
+          .familia-wrap .persons-container .person .more-info-wrap .more-info .quick-info {
+            font-weight: 200;
+            font-size: 18px; }
+            .familia-wrap .persons-container .person .more-info-wrap .more-info .quick-info .qk-info {
+              font-weight: 200;
+              font-size: 15.75px; }
+          .familia-wrap .persons-container .person .more-info-wrap .more-info .pregunta {
+            font-weight: 175;
+            font-size: 15.75px;
+            margin: 0 0 5px 0;
+            color: #387c6d; }
+          .familia-wrap .persons-container .person .more-info-wrap .more-info .respuesta {
+            font-weight: 300;
+            font-size: 18px;
+            margin-bottom: 20px; }
+            .familia-wrap .persons-container .person .more-info-wrap .more-info .respuesta span {
+              font-weight: 400;
+              color: #01765c; }
+        .familia-wrap .persons-container .person .more-info-wrap .more-info > p {
+          display: block;
+          line-height: 1; }
       .familia-wrap .persons-container .person .small-line {
         width: 30px;
         height: 3px;
@@ -998,16 +1033,20 @@ pre {
         margin: 0px auto;
         display: none; }
     .familia-wrap .persons-container .current {
-      height: auto; }
+      height: auto;
+      text-align: center;
+      /*line-height: 1;*/ }
 
-@media screen and (max-width: 683px) {
+@media screen and (max-width: 483px) {
   .familia-wrap .sub-title-md {
-    font-weight: 320;
+    padding: 0 20px;
+    font-weight: 300;
     font-size: 24px; }
   .familia-wrap .text-normal {
     font-weight: 200;
     font-size: 16px;
-    max-width: 420px; }
+    max-width: 420px;
+    padding: 0 20px; }
   .familia-wrap .persons-container .person .picture-name-wrap .line {
     width: 3px;
     height: 50px;
