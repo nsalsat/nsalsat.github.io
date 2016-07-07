@@ -1001,7 +1001,7 @@ pre {
             margin: 0; }
           .familia-wrap .persons-container .person .more-info-wrap .more-info .person-line {
             width: 30px;
-            height: 2px;
+            height: 3px;
             margin: 20px auto;
             background-color: #387c6d; }
           .familia-wrap .persons-container .person .more-info-wrap .more-info .quick-info {
@@ -1075,3 +1075,49 @@ pre {
     color: #4c4c4c;
     font-weight: 300;
     font-family: Roboto; }
+
+.site-footer {
+  /*  the margin should is in default.html  */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+  border: none;
+  z-index: -1; }
+  .site-footer .footer-wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #222; }
+    .site-footer .footer-wrap .ul-info-wrap {
+      list-style: none; }
+      .site-footer .footer-wrap .ul-info-wrap .text-footer {
+        color: #387c6d;
+        font-size: 27px; }
+      .site-footer .footer-wrap .ul-info-wrap .link-footer a {
+        font-style: none;
+        color: #555;
+        font-size: 18px; }
+    .site-footer .footer-wrap .frase-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      /*max-width: 180px;
+      margin: 0 auto;*/
+      text-align: right;
+      padding: 0 0 10px 0; }
+      .site-footer .footer-wrap .frase-wrap .frase {
+        margin: 0;
+        font-size: 27px;
+        line-height: 1;
+        display: inline-block;
+        text-align: left;
+        color: #387c6d; }
+      .site-footer .footer-wrap .frase-wrap .sign {
+        display: block;
+        width: 100%;
+        margin: 0 0 0 auto;
+        font-size: 14px;
+        line-height: 1;
+        padding-top: 3px; }
