@@ -533,6 +533,7 @@ pre {
       .wrap .nav [class^="sec-"] img {
         position: absolute;
         display: block;
+        background-color: #222;
         filter: blur(0px);
         -moz-filter: blur(0px);
         -webkit-filter: blur(0px);
@@ -817,43 +818,73 @@ pre {
   .whitespace {
     background-color: blue; } }
 .eventos-wrap {
-  background-color: white;
-  max-width: 900px;
-  min-width: 280px;
+  background-color: #fff;
+  width: 100%;
+  height: auto;
   margin: 40px auto;
   text-align: center;
-  border-radius: 3px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
   padding: 10px 0px 10px 0; }
-  .eventos-wrap .lista-eventos {
-    list-style: none;
+  .eventos-wrap .sub-title-md {
+    font-weight: 300;
+    font-size: 27px; }
+  .eventos-wrap .text-normal {
+    color: #555;
+    font-weight: 200;
+    font-size: 18px;
+    max-width: 420px;
+    margin: 0 auto; }
+  .eventos-wrap .text-normal-small {
+    color: #555;
+    font-weight: 200;
+    font-size: 14px;
+    max-width: 420px;
+    margin: 0 auto; }
+  .eventos-wrap .eventos-container {
     width: 100%;
-    margin: 0;
-    text-align: left; }
-    .eventos-wrap .lista-eventos .evento {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: flex-start; }
-      .eventos-wrap .lista-eventos .evento .info-evento {
-        width: 300px;
-        margin: 0 auto;
-        padding: 10px 20px;
-        border-bottom: 1px solid #555; }
-        .eventos-wrap .lista-eventos .evento .info-evento .title-e {
-          color: green;
-          font-size: 21px;
-          margin: 0; }
-        .eventos-wrap .lista-eventos .evento .info-evento .inf-e {
-          font-size: 17px;
-          line-height: 20px;
-          margin: 0; }
-          .eventos-wrap .lista-eventos .evento .info-evento .inf-e .mono {
-            font-family: monospace;
-            color: #333; }
-      .eventos-wrap .lista-eventos .evento .evento-img {
-        width: 100%;
-        height: auto; }
+    height: auto;
+    margin: 40px  0 20px 0;
+    background-color: #f3f3f3;
+    padding: 30px 20px; }
+    .eventos-wrap .eventos-container .lista-eventos {
+      list-style: none;
+      max-width: 640px;
+      width: auto;
+      margin: 0 auto;
+      text-align: left; }
+      .eventos-wrap .eventos-container .lista-eventos .evento {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start; }
+        .eventos-wrap .eventos-container .lista-eventos .evento .info-evento {
+          width: 300px;
+          margin: 0 auto;
+          padding: 10px 20px; }
+          .eventos-wrap .eventos-container .lista-eventos .evento .info-evento .title-evento {
+            font-size: 27px;
+            color: #387c6d;
+            margin: 0 0 5px 0;
+            text-shadow: 0px 1px 3px rgba(85, 85, 85, 0.6); }
+          .eventos-wrap .eventos-container .lista-eventos .evento .info-evento .summary-evento {
+            font-size: 16px;
+            line-height: 1.2;
+            margin: 0;
+            padding: 0;
+            font-weight: 200;
+            color: rgba(85, 85, 85, 0.7); }
+            .eventos-wrap .eventos-container .lista-eventos .evento .info-evento .summary-evento span {
+              color: inherit;
+              color: #01765c; }
+          .eventos-wrap .eventos-container .lista-eventos .evento .info-evento .clik-more {
+            display: block;
+            font-size: 10px;
+            color: rgba(85, 85, 85, 0.6);
+            margin: -3px 0 0;
+            padding: 0;
+            line-height: 1; }
+        .eventos-wrap .eventos-container .lista-eventos .evento .evento-img {
+          width: 100%;
+          height: auto; }
 
 .galeria-wrap {
   background-color: white;
@@ -969,7 +1000,7 @@ pre {
             text-shadow: 0px 1px 3px rgba(85, 85, 85, 0.8); }
           .familia-wrap .persons-container .person .picture-name-wrap .name-wrap .summary {
             display: block;
-            color: #555;
+            color: rgba(85, 85, 85, 0.7);
             font-size: 18px;
             font-weight: 200;
             margin: 0;
