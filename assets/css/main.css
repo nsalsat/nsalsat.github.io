@@ -843,8 +843,7 @@ pre {
     width: 100%;
     height: auto;
     margin: 40px  0 20px 0;
-    background-color: #f3f3f3;
-    padding: 30px 20px; }
+    background-color: #f3f3f3; }
     .eventos-wrap .eventos-container .lista-eventos {
       list-style: none;
       max-width: 640px;
