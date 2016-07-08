@@ -48,9 +48,9 @@ var main = function() {
 
 
         var topOffset = ($(this).offset().top - $(window).scrollTop());
-        console.log(topOffset);
+        // console.log(topOffset);
         var target = $(this);
-        console.log(target);
+        // console.log(target);
         if(topOffset >= 40){ 
             $('html,body').animate({
                 scrollTop: (target.offset().top - 50)
@@ -64,7 +64,42 @@ var main = function() {
 
     });
     
-// blue unit 6 
+// unit 6 and 7
+
+// $('.bolita-wrap').click(function(){
+//     var topOffset = ($(this).offset().top - $(window).scrollTop());
+//     console.log(topOffset);
+//     var target = $('#top');
+//     console.log(target);
+
+//         $('html,body').animate({
+//         scrollTop: (target.offset().top + 15)
+
+//     }
+// });
+
+$(window).scroll(function(){
+    var target = $('#top');
+    var duracion = 400;
+    var wScroll = $(this).scrollTop();
+    var topOffset = ($('.under-menu').offset().top - $(window).scrollTop());
+    console.log(topOffset);
+    
+    // console.log(target);
+    if(topOffset <= 0){ 
+        $('.bolita-wrap').fadeIn(duracion);
+    }
+    else {
+        $('.bolita-wrap').fadeOut(duracion);
+    }
+});
+
+$('.bolita-wrap').click(function(){
+    var target = $('#top')
+    $('html,body').animate({
+        scrollTop: (target.offset().top - 100)
+    },300);
+});
 
 
 
