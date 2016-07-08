@@ -40,14 +40,14 @@ var main = function() {
             $('.person').children('.more-info-wrap').slideUp(duration);
             $($(this).parent('.person')).addClass('current');
             $($(this).parent('.person')).children('.more-info-wrap').slideDown(duration);
-            var topOffset = ($(this).offset().top - $(window).scrollTop());
-            
         }
         else{
             $('.person').removeClass('current');
             $($(this).parent('.person')).children('.more-info-wrap').slideUp(duration);
         }
-        
+
+
+        var topOffset = ($(this).offset().top - $(window).scrollTop());
         console.log(topOffset);
         var target = $(this);
         console.log(target);
@@ -63,7 +63,8 @@ var main = function() {
         }
 
     });
-
+    
+// blue unit 6 
 
 
 

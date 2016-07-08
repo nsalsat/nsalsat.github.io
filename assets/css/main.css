@@ -820,10 +820,11 @@ pre {
 .eventos-wrap {
   background-color: #fff;
   width: 100%;
+  min-width: 280px;
   height: auto;
   margin: 40px auto;
   text-align: center;
-  padding: 10px 0px 10px 0; }
+  padding: 10px 0px; }
   .eventos-wrap .sub-title-md {
     font-weight: 300;
     font-size: 27px; }
@@ -832,17 +833,26 @@ pre {
     font-weight: 200;
     font-size: 18px;
     max-width: 420px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0 20px; }
   .eventos-wrap .text-normal-small {
     color: #555;
     font-weight: 200;
     font-size: 14px;
     max-width: 420px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0 20px; }
   .eventos-wrap .eventos-container {
-    width: 100%;
+    display: flex;
+    margin: 40px 0 20px 0;
+    padding: 30px 0;
+    list-style: none;
     height: auto;
-    margin: 40px  0 20px 0;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
     background-color: #f3f3f3; }
     .eventos-wrap .eventos-container .lista-eventos {
       list-style: none;
@@ -913,12 +923,8 @@ pre {
   min-width: 280px;
   margin: 40px auto;
   text-align: center;
-  /*box-shadow: $wrap-shadow;*/
-  /*background-color: #f6f6f6;*/
-  /*background-color: #d6d6d6;*/
   padding: 10px 0px; }
   .familia-wrap .sub-title-md {
-    /*color: #4c4c4c;*/
     font-weight: 300;
     font-size: 27px; }
   .familia-wrap .text-normal {
@@ -936,10 +942,7 @@ pre {
     width: 100%;
     flex-wrap: nowrap;
     flex-direction: column;
-    /*box-shadow: $wrap-shadow;*/
     overflow: hidden;
-    /*background-color: #1c9f92;*/
-    /*background-color: #05a793;*/
     background-color: #f3f3f3; }
     .familia-wrap .persons-container .person {
       display: block;
