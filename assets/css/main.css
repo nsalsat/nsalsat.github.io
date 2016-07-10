@@ -1177,3 +1177,39 @@ pre {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -52%); }
+
+.record-container {
+  width: 100%;
+  height: auto;
+  padding: 70px 0 40px 0;
+  margin: 40px 0;
+  background-color: #2d6357;
+  background-image: url(/assets/img/duela.png);
+  background-position: center 0px;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  background-blend-mode: multiply; }
+  .record-container .record-wrap {
+    display: flex;
+    height: 100%;
+    margin: 70px 0 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); }
+    .record-container .record-wrap .unit-wrap {
+      margin: 0 auto 30px;
+      min-width: 280px; }
+      .record-container .record-wrap .unit-wrap [class^="record-"] {
+        color: white; }
+      .record-container .record-wrap .unit-wrap .record-number {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1;
+        margin: 0 0 20px 0; }
+      .record-container .record-wrap .unit-wrap .record-name {
+        font-size: "Oswald", Roboto, "Helvetica Neue", sans-serif, Helvetica, Arial;
+        text-transform: uppercase;
+        line-height: 1;
+        letter-spacing: 1px;
+        margin: 0 0 10px 0; }

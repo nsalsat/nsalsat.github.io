@@ -22,7 +22,7 @@ var main = function() {
     //     // console.log(topOffset);
     //     var target = $(this);
     //     // console.log(target);
-    //     if(topOffset >= 40){ 
+    //     if(topOffset >= 40){
     //         $('html,body').animate({
     //             scrollTop: (target.offset().top - 50)
     //         },300);
@@ -53,7 +53,7 @@ var main = function() {
         // console.log(topOffset);
         var target = $(this);
         // console.log(target);
-        if(topOffset >= 40){ 
+        if(topOffset >= 40){
             $('html,body').animate({
                 scrollTop: (target.offset().top - 50)
             },300);
@@ -65,7 +65,7 @@ var main = function() {
         }
 
     });
-    
+
 // unit 6 and 7
 
 
@@ -77,13 +77,29 @@ $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
     var topOffset = ($('.under-menu').offset().top - $(window).scrollTop());
     // console.log(topOffset);
-    
+
     // console.log(target);
-    if(topOffset <= 0){ 
+    if(topOffset <= 0){
         $('.bolita-wrap').fadeIn(duracion);
     }
     else {
         $('.bolita-wrap').fadeOut(duracion);
+    }
+
+    // move the background-image slowly
+    // if( wScroll > ($('.record-container').offset().top - $(window).height()) ){
+    //   // $('.record-container').css({'background-position':'center '+ (wScroll - $('.record-container').offset().top)  +'px'});
+    //   //console.log('yo');
+    //   $('record-container').css({'background-position':'center 0px'});
+    // }
+});
+$(window).scroll(function(){
+    var wScroll = $(this).scrollTop();
+    // move the background-image slowly
+    if( wScroll > ($('.record-container').offset().top - $(window).height()) ){
+      // $('.record-container').css({'background-position':'center '+ (wScroll - $('.record-container').offset().top)  +'px'});
+      //console.log('yo');
+      $('.record-container').css({'background-position':'center -'+ wScroll/10 +'px'});
     }
 });
 
@@ -113,8 +129,8 @@ $('a[href*=".html"]').click(function(event){
         $('html, body').animate({
           scrollTop: target.offset().top
         },duration);
-    } 
-    
+    }
+
 });
 
 
