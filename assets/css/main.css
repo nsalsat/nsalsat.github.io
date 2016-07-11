@@ -1215,19 +1215,80 @@ pre {
         margin: 0 0 10px 0;
         text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); }
 
-.estudiantes-container .box-estudiante {
-  height: 280px;
-  width: 280px;
-  background-color: #387c6d; }
+.estudiantes-container {
+  width: 100%;
+  height: auto;
+  background-color: #387c6d;
+  padding: 70px 0 40px 0; }
+  .estudiantes-container .estudiantes-wrap {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .estudiantes-container .estudiantes-wrap .student-container {
+      width: 100%;
+      min-width: 280px;
+      max-width: 470px;
+      padding: 20px;
+      flex-grow: 1;
+      box-sizing: padding-box;
+      margin: 0 10px 30px;
+      background-color: white;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; }
+      .estudiantes-container .estudiantes-wrap .student-container .std-img-black-window {
+        position: relative; }
+        .estudiantes-container .estudiantes-wrap .student-container .std-img-black-window .std-img {
+          width: 100%;
+          height: auto; }
+        .estudiantes-container .estudiantes-wrap .student-container .std-img-black-window .black-window {
+          position: absolute;
+          top: 0;
+          bottom: 5px;
+          left: 0;
+          right: 0;
+          background-color: rgba(0, 0, 0, 0.8); }
+          .estudiantes-container .estudiantes-wrap .student-container .std-img-black-window .black-window .std-detalles {
+            margin: auto 0;
+            display: flex;
+            height: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 20px;
+            flex-direction: column; }
+            .estudiantes-container .estudiantes-wrap .student-container .std-img-black-window .black-window .std-detalles .std-apodo {
+              color: #fff;
+              font-size: 23.625px;
+              text-transform: uppercase;
+              font-weight: 200;
+              margin: 0;
+              line-height: 1; }
+            .estudiantes-container .estudiantes-wrap .student-container .std-img-black-window .black-window .std-detalles .std-ritmo {
+              color: #828282;
+              margin: 0; }
+      .estudiantes-container .estudiantes-wrap .student-container .std-info .std-name {
+        text-transform: uppercase;
+        font-size: 21px;
+        margin: 0; }
+      .estudiantes-container .estudiantes-wrap .student-container .std-info .std-coreo {
+        font-size: 15.75px;
+        margin: 0; }
 
 .horarios-container {
-  margin: 70px 0 40px 0;
-  background-color: #d3d3d3; }
+  margin: 70px 0 40px 0; }
   .horarios-container .horarios-wrap {
     margin: 0 auto;
     background-color: #fff;
     display: flex;
-    max-width: 960px;
+    max-width: 1060px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -1256,7 +1317,13 @@ pre {
       .horarios-container .horarios-wrap .day-container .clase {
         color: #4c4c4c;
         font-size: 27px;
-        margin: 30px 0 10px; }
+        margin: 30px 0 15px;
+        line-height: 1; }
+        .horarios-container .horarios-wrap .day-container .clase .and {
+          line-height: 1;
+          margin: -10px 0;
+          padding: 0;
+          font-size: 18px; }
       .horarios-container .horarios-wrap .day-container .hora {
         color: rgba(85, 85, 85, 0.7);
         font-size: 16px;
