@@ -851,7 +851,7 @@ pre {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    background-color: #f3f3f3; }
+    background-color: #f6f6f6; }
     .eventos-wrap .eventos-bg .eventos-container .evento-wrap {
       display: flex;
       flex-direction: column;
@@ -935,7 +935,7 @@ pre {
     flex-wrap: nowrap;
     flex-direction: column;
     overflow: hidden;
-    background-color: #f3f3f3; }
+    background-color: #f6f6f6; }
     .familia-wrap .persons-container .person {
       display: block;
       margin: 40px 0 0 0;
@@ -1113,7 +1113,7 @@ pre {
     align-items: center;
     background-color: #fff; }
   .contacto-wrap .contacto-steps-wrap .alt {
-    background-color: #f3f3f3; }
+    background-color: #f6f6f6; }
 
 .site-footer {
   /*  the margin should is in default.html  */
@@ -1188,7 +1188,7 @@ pre {
   background-position: center 0px;
   background-attachment: fixed;
   background-blend-mode: multiply;
-  background-repeat: repeat-y; }
+  background-repeat: round; }
   .record-container .record-wrap {
     display: flex;
     height: 100%;
@@ -1233,11 +1233,14 @@ pre {
     justify-content: center;
     padding: 0 20px; }
     .horarios-container .horarios-wrap .day-container {
-      background-color: #f0f0f0;
       border-bottom: 3px solid #387c6d;
       width: 200px;
       margin: 0 10px 30px;
-      padding: 20px 20px 0; }
+      padding: 20px 20px 0;
+      background-color: white;
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      box-shadow: 0px 2px 4px rgba(30, 30, 30, 0.4); }
       .horarios-container .horarios-wrap .day-container .dia {
         background-color: #387c6d;
         font-size: 24px;
