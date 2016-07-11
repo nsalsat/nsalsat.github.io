@@ -99,7 +99,7 @@ $(window).scroll(function(){
     if( wScroll > ($('.record-container').offset().top - $(window).height()) ){
       // $('.record-container').css({'background-position':'center '+ (wScroll - $('.record-container').offset().top)  +'px'});
       //console.log('yo');
-      $('.record-container').css({'background-position':'center -'+ wScroll/10 +'px'});
+      $('.record-container').css({'background-position':'center -'+ wScroll/2 +'px'});
     }
 });
 
