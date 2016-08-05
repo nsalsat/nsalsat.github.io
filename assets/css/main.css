@@ -1011,15 +1011,12 @@ pre {
         display: none;
         padding: 0px;
         margin: 30px 0 0 0;
-        overflow: hidden;
-        background-color: #fdc140; }
+        overflow: hidden; }
         .familia-wrap .persons-container .person .more-info-wrap .more-info {
-          background-color: #f3f3f3;
+          background-color: #f2f2f2;
           max-width: 450px;
           margin: 0px auto;
-          padding: 40px 20px;
-          border-left: 5px solid #fdc140;
-          border-right: 5px solid #fdc140; }
+          padding: 40px 20px; }
           .familia-wrap .persons-container .person .more-info-wrap .more-info .person-name {
             font-weight: 300;
             font-size: 27px;
